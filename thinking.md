@@ -1,0 +1,3 @@
+- At the beginning of the presentation, we could Mad Lib the Cat Cafe name
+ - "Can I get an adjective? and a noun?" ok
+ - When we're creating our cat cafe name, I'll bring up that name (e.g. Red Wheelbarrow Cat Cafe)
