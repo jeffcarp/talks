@@ -15,9 +15,15 @@ Startup House
 
 - It's pretty cool
 
+Did you hear? A Cat Cafe is coming to San Francisco.
+
+But cats are so difficult to manage!
+
 ## We're going to build a CMS
 
-A new cat cafe is coming to town, and you know how hard it is to wrangle cats, so we're going to create a **Cat Management System** to help us.
+Not a Content Management System
+
+A **Cat Management System**
 
 ## Structure of this talk
 
