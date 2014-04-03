@@ -1,10 +1,15 @@
-angularjs-talk
+ng-talk
 ==============
 
 This README will serve as a guide through the talk...
 
-Startup House
-7pm, April 24, 2014
+```
+Prepared for:
+
+HTML5 Live Code Meetup
+7pm, Thursday April 24, 2014
+Startup House, 934 Howard St., San Francisco, CA
+```
 
 ## Assumptions
 
