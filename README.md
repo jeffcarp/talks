@@ -60,6 +60,9 @@ Now we need to X. How do we do that?
 
 (without controllers yet, just {{2 + 2}})
 
+Now we need something to manage this state. How do we do that?
+
+## Controllers
 
 ## Where to go from here
 
