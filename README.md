@@ -39,8 +39,6 @@ A **Cat Management System**
 
 - Let's start off with a blank HTML page.
 
-**index.html**
-
 ```html
 <!doctype html>
 <head>
@@ -55,8 +53,6 @@ A **Cat Management System**
 ```
 
 Inside our body, let's tell Angular where we want our app to live. We do this using an attribute called `ng-app`. "ng-app means anything inside this tag belongs to the app."
-
-**index.html**
 
 ```html
 <div ng-app>
