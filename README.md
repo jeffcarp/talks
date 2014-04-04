@@ -85,6 +85,7 @@ Now we need something to manage this state. How do we do that?
   </div>
 
 </div>
+```
 
 ## Let's talk about dependency injection
 
