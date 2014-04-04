@@ -3,9 +3,9 @@ ng-talk
 
 This README will serve as a guide through the talk...
 
-```
-Prepared for:
+This talk was originally prepared for the SF HTML5 Livecode meetup group but I intend for this README to stand alone as an introduction.
 
+```
 HTML5 Live Code Meetup
 7pm, Thursday April 24, 2014
 Startup House, 934 Howard St., San Francisco, CA
