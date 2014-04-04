@@ -51,20 +51,16 @@ A **Cat Management System**
 </head>
 <body>
 
-  <!-- ... -->
-
 </body>
 </html>
 ```
 
-Inside our body, let's tell Angular where we want our app to live. We do this using an attribute called `ng-app`. "ng-app means anything inside this tag belongs to the app."
+Inside the body tag, let's tell Angular where we want our app to live. We do this using an attribute called `ng-app`. "ng-app means anything inside this tag belongs to the app."
 
 ```html
 <div ng-app>
 
   <h1>Our Cat Cafe</h1>
-
-  <!-- ... -->
 
 </div>
 ```
@@ -78,6 +74,19 @@ Now we need to X. How do we do that?
 Now we need something to manage this state. How do we do that?
 
 ## Controllers
+
+## Factories, Services, etc.
+
+- THEY ARE SINGLETONS
+
+## Persistence with Furrbase
+
+## Tools to use
+
+Maybe even during the presentation?
+
+Angular Batarang
+https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk
 
 ## Where to go from here
 
