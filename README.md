@@ -38,7 +38,7 @@ A **Cat Management System**
   - ng-bind || {{}}
   - ng-model
 - app.directive()
-- AngularFire
+- Persistence with Firebase and AngularFire
 
 ## ng-app
 
@@ -75,11 +75,66 @@ Now we need something to manage this state. How do we do that?
 
 ## Controllers
 
+- Controllers manage
+- Can be nested, but probably a better idea to use directives for that.
+
+```html
+<div ng-controller="">
+
+  <div ng-controller="">
+  </div>
+
+</div>
+
+## Let's talk about dependency injection
+
+- DI is a powerful way of requiring modules, similar to CommonJS, Browserify, AMD
+- In Angular all you need to inject a dependency is to pass it as a parameter to your controller or service
+
+```javascript
+
+// Angular reads the parameters
+app.controller('catsCtrl', function($scope, $location, CatService) {
+
+  $scope.inc = function(x) {
+    return x + 1;
+  };
+
+  $scope.addACat = function(catName) {
+    return CatService.add({
+      name: catName
+    });
+  };
+});
+
+// 
+
+
+
+```
+
+[1] If you're minifying your code, you must use ng-min to preserve this functionality. If you can't use ng-min, you can declare controllers and services like this:
+
+```javascript
+
+app.controller('catsCtrl', ['$scope', '$location', 'CatService', function($scope, $location, CatService) {
+
+  $scope.inc = function(x) {
+    return x + 1;
+  };
+
+  // ...
+
+}];
+
+```
+
 ## Factories, Services, etc.
 
-- THEY ARE SINGLETONS
+- Services abstract your data, use them as the M in MVC
+- All services are **singletons**
 
-## Persistence with Furrbase
+## Persistence with Firebase
 
 ## Tools to use
 
