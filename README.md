@@ -67,11 +67,43 @@ Inside the body tag, let's tell Angular where we want our app to live. We do thi
 
 Now we need to X. How do we do that?
 
+## The Angular way of thinking
+
+Let's take a step back and look at the first directive we used: `ng-app`
+
+Angular is made up of directives. These can come in the form of attribtues (`<div ng-app></div>`), elements (`<ng-view></ng-view`>)
+
+Not only does Angular utilize this 'superset' of HTML, it also replaces some existing HTML elements, for example, `<form>` is an Angular directive.
+
 ## Data Binding
 
 (without controllers yet, just {{2 + 2}})
 
 Now we need something to manage this state. How do we do that?
+
+```html
+<div>{{2 + 2}}</div>
+
+<!-- renders as -->
+
+<div>4</div>
+```
+
+```html
+{{catName = 'Meowth'}}
+
+<div>{{catName}}</div>
+
+<!-- is the same as -->
+
+<div ng-bind="catName"></div>
+
+<!-- and renders as -->
+
+<div>Meowth</div>
+```
+
+Wait, of course we need a cat's name.
 
 ## Controllers
 
@@ -93,8 +125,7 @@ Now we need something to manage this state. How do we do that?
 - In Angular all you need to inject a dependency is to pass it as a parameter to your controller or service
 
 ```javascript
-
-// Angular reads the parameters
+// Angular reads the parameters and injects them for you to use
 app.controller('catsCtrl', function($scope, $location, CatService) {
 
   $scope.inc = function(x) {
@@ -107,18 +138,14 @@ app.controller('catsCtrl', function($scope, $location, CatService) {
     });
   };
 });
-
-// 
-
-
-
 ```
 
 [1] If you're minifying your code, you must use ng-min to preserve this functionality. If you can't use ng-min, you can declare controllers and services like this:
 
 ```javascript
-
-app.controller('catsCtrl', ['$scope', '$location', 'CatService', function($scope, $location, CatService) {
+app.controller('catsCtrl',
+  ['$scope', '$location', 'CatService',
+  function($scope, $location, CatService) {
 
   $scope.inc = function(x) {
     return x + 1;
@@ -127,7 +154,6 @@ app.controller('catsCtrl', ['$scope', '$location', 'CatService', function($scope
   // ...
 
 }];
-
 ```
 
 ## Factories, Services, etc.
@@ -141,8 +167,7 @@ app.controller('catsCtrl', ['$scope', '$location', 'CatService', function($scope
 
 Maybe even during the presentation?
 
-Angular Batarang
-https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk
+[Angular Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk)
 
 ## Where to go from here
 
