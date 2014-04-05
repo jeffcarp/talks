@@ -80,11 +80,33 @@ Your Angular app doesn't have to be the entire page, it can live just on your si
 
 Let's take a step back and look at the first directive we used: `ng-app`
 
-Angular is made up of directives. These can come in the form of attribtues (`<div ng-app></div>`), elements (`<ng-view></ng-view`>)
+Angular is centered around **directives**.
 
 Not only does Angular utilize this 'superset' of HTML, it also replaces some existing HTML elements, for example, `<form>` is an Angular directive.
 
-Now we need to give this guest cat a name. How do we do that?
+Directives come in 4 forms:
+
+```html
+<!-- Elements -->
+<form></form>
+
+<!-- Attributes -->
+<img ng-src="example.com/{{2 + 2}}/asdf.jpg" />
+
+<!-- Classes -->
+<div class="our-dir: 2 + 2;"></div>
+
+<!-- Comments -->
+<!-- directive: our-dir: 2 + 2 -->
+```
+
+However, the first two - Elements and Attributes - are the most common. We can write your own directives, which we'll see later down the road.
+
+Directives can be used for many purposes:
+
+- Creating re-usable components (like a file upload directive)
+- Macro-expansion
+- Extending built-in elements (like `<form></form>`)
 
 ## Scope
 
