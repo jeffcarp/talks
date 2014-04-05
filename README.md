@@ -75,7 +75,7 @@ Angular is made up of directives. These can come in the form of attribtues (`<di
 
 Not only does Angular utilize this 'superset' of HTML, it also replaces some existing HTML elements, for example, `<form>` is an Angular directive.
 
-## Data Binding
+## Interpolation
 
 (without controllers yet, just {{2 + 2}})
 
@@ -104,6 +104,20 @@ Now we need something to manage this state. How do we do that?
 ```
 
 Wait, of course we need a cat's name.
+
+## Data Binding
+
+How does that fit into the rest of Angular? As we talked about before, almost everything in Angular is expressed as a directive.
+
+When you wrap something in handlebars in an Angular expression, that's just shorthand for using `ng-bind`.
+
+```html
+<div>{{2 + 2}}</div>
+
+<!-- is the same as -->
+
+<div ng-bind="2 + 2"></div>
+```
 
 ## Controllers
 
