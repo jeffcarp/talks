@@ -13,8 +13,9 @@ Startup House, 934 Howard St., San Francisco, CA
 
 ## Assumptions
 
-- You know the basics of JavaScript
+- You are familiar with JavaScript
 - You are interested in Angular
+- You enjoy the company of felines
 
 ## Reasons to use Angular
 
