@@ -135,7 +135,7 @@ When you wrap something in handlebars in an Angular expression, that's just shor
 
 ## Let's talk about dependency injection
 
-- DI is a powerful way of requiring modules, similar to CommonJS, Browserify, AMD
+- Dependency injection -- or DI -- is a powerful way of requiring modules, similar to CommonJS, Browserify, AMD
 - In Angular all you need to inject a dependency is to pass it as a parameter to your controller or service
 
 ```javascript
@@ -147,7 +147,7 @@ app.controller('catsCtrl', function($scope, $location, CatService) {
   };
 
   $scope.addACat = function(catName) {
-    return CatService.add({
+    CatService.add({
       name: catName
     });
   };
