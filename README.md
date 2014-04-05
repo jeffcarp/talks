@@ -1,9 +1,7 @@
 ng-talk
 ==============
 
-This README will serve as a guide through the talk...
-
-This talk was originally prepared for the SF HTML5 Livecode meetup group but I intend for this README to stand alone as an introduction.
+This guide is being prepared as a handout for the SF HTML5 Livecode meetup group but I intend for it to stand alone as a light introduction to Angular.
 
 ```
 HTML5 Live Code Meetup
