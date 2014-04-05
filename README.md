@@ -47,26 +47,36 @@ A **Cat Management System**
 <!doctype html>
 <head>
   <title>Cat Cafe App</title>
+  <!-- TODO: include Angular -->
+  <script></script>
 </head>
 <body>
+
+  <h1>Our Cat Cafe</h1>
+
+  <h2>Today's guest cat is: {{guestCatName}}</h2>
+
+  <h3>Today's discount is: ${{5 * 0.3}}</h3>
 
 </body>
 </html>
 ```
 
-Inside the body tag, let's tell Angular where we want our app to live. We do this using an attribute called `ng-app`. "ng-app means anything inside this tag belongs to the app."
+Now, this just renders the handlebars to the page without transforming them. In order to tell Angular where we want it to live, we need to use our first directive, `ng-app`.
+
+"ng-app means anything inside this tag belongs to the app."
+
+So let's put `ng-app` in the body tag. 
 
 ```html
-<div ng-app>
-
-  <h1>Our Cat Cafe</h1>
-
-</div>
+<body ng-app>
+  ...
+</body>
 ```
 
-Now we need to X. How do we do that?
+Your Angular app doesn't have to be the entire page, it can live just on your sidebar, for instance. `<aside ng-app></aside>`. Angular will not touch the DOM outside of the element on which you declared `ng-app`.
 
-## The Angular way of thinking
+### The Angular way of thinking
 
 Let's take a step back and look at the first directive we used: `ng-app`
 
@@ -74,53 +84,29 @@ Angular is made up of directives. These can come in the form of attribtues (`<di
 
 Not only does Angular utilize this 'superset' of HTML, it also replaces some existing HTML elements, for example, `<form>` is an Angular directive.
 
-## Interpolation
+Now we need to give this guest cat a name. How do we do that?
 
-(without controllers yet, just {{2 + 2}})
+## Scope
 
-Now we need something to manage this state. How do we do that?
+Wherever you are in Angular, you're always within a scope. In the case of our `guestCatName` variable above, we're not in a controller or directive or anything, so the scope it's in is `$rootScope`. When we typed `{{guestCatName}}` in the root of our app, Angular tried looking up `$rootScope.guestCatName` and came up with `undefined`, which is why it rendered nothing.
 
-```html
-<div>{{2 + 2}}</div>
-
-<!-- renders as -->
-
-<div>4</div>
-```
+But we can evaulate simple expressions in our templates, and assignment is one of those. So what if we put `{{guestCatName = '?'}}` into our template?
 
 ```html
-{{catName = 'Meowth'}}
+  <h1>Our Cat Cafe</h1>
 
-<div>{{catName}}</div>
+  {{guestCatName = 'Charles Whiskerton'}}
 
-<!-- is the same as -->
-
-<div ng-bind="catName"></div>
-
-<!-- and renders as -->
-
-<div>Meowth</div>
+  <h2>Today's guest cat is: {{guestCatName}}</h2>
 ```
 
-Wait, of course we need a cat's name.
-
-## Data Binding
-
-How does that fit into the rest of Angular? As we talked about before, almost everything in Angular is expressed as a directive.
-
-When you wrap something in handlebars in an Angular expression, that's just shorthand for using `ng-bind`.
-
-```html
-<div>{{2 + 2}}</div>
-
-<!-- is the same as -->
-
-<div ng-bind="2 + 2"></div>
-```
+We successfully set and retrieved something from our current scope. For reasons you're probably aware of, this kind of logic is frowned upon in templates, so let's move from the V to the C.
 
 ## Controllers
 
-- Controllers manage
+In Angular, scope is the way templates and controllers interact.
+
+- Controllers manage $scope, among other things.
 - Can be nested, but probably a better idea to use directives for that.
 
 ```html
@@ -153,6 +139,26 @@ app.controller('catsCtrl', function($scope, $location, CatService) {
 });
 ```
 
+You can use DI with:
+
+```javascript
+// Providers
+
+// Services
+ourApp.factory('ourService', function(CatService) {
+});
+
+// Directives
+ourApp.directive('ourDirective', function(CatService) {
+});
+
+// Filters
+ourApp.filter('ourFilter', function(CatService) {
+});
+
+// Run
+```
+
 [1] If you're minifying your code, you must use ng-min to preserve this functionality. If you can't use ng-min, you can declare controllers and services like this:
 
 ```javascript
@@ -181,6 +187,11 @@ app.controller('catsCtrl',
 Maybe even during the presentation?
 
 [Angular Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk)
+
+## What are our alternatives?
+
+**Backbone** - [what using Backbone would give us]
+**EmberJS** - [what using Ember would give us]
 
 ## Where to go from here
 
