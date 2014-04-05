@@ -62,11 +62,9 @@ A **Cat Management System**
 </html>
 ```
 
-Now, this just renders the handlebars to the page without transforming them. In order to tell Angular where we want it to live, we need to use our first directive, `ng-app`.
+This just renders the handlebars to the page without transforming them. In order to tell Angular where we want it to live, we need to use our first directive, `ng-app`.
 
-"ng-app means anything inside this tag belongs to the app."
-
-So let's put `ng-app` in the body tag. 
+`ng-app` means anything inside this tag belongs to the app. So let's put `ng-app` in the body tag because we want our entire page to be an Angular app.
 
 ```html
 <body ng-app>
@@ -74,17 +72,13 @@ So let's put `ng-app` in the body tag.
 </body>
 ```
 
-Your Angular app doesn't have to be the entire page, it can live just on your sidebar, for instance. `<aside ng-app></aside>`. Angular will not touch the DOM outside of the element on which you declared `ng-app`.
+However it doesn't have to live in `<body>`, it can just live on your sidebar, for instance. `<aside ng-app></aside>`. Angular will not touch the DOM outside of the element on which you declared `ng-app`.
 
 ### The Angular way of thinking
 
-Let's take a step back and look at the first directive we used: `ng-app`
+Let's take a step back and look at our first directive: `ng-app`
 
-Angular is centered around **directives**.
-
-Not only does Angular utilize this 'superset' of HTML, it also replaces some existing HTML elements, for example, `<form>` is an Angular directive.
-
-Directives come in 4 forms:
+Angular is centered around **directives**, which are functionality resembling a 'superset' of HTML. Directives come in 4 forms:
 
 ```html
 <!-- Elements -->
@@ -102,27 +96,31 @@ Directives come in 4 forms:
 
 However, the first two - Elements and Attributes - are the most common. We can write your own directives, which we'll see later down the road.
 
+Angular also replaces or wraps some existing HTML elements with its own directives, for example, `<form>` is an Angular directive.
+
 Directives can be used for many purposes:
 
 - Creating re-usable components (like a file upload directive)
-- Macro-expansion
-- Extending built-in elements (like `<form></form>`)
+- Macro-expansion (if you find yourself repeating the same HTML structure)
+- Extending built-in elements (like `<form>`)
 
 ## Scope
 
-Wherever you are in Angular, you're always within a scope. In the case of our `guestCatName` variable above, we're not in a controller or directive or anything, so the scope it's in is `$rootScope`. When we typed `{{guestCatName}}` in the root of our app, Angular tried looking up `$rootScope.guestCatName` and came up with `undefined`, which is why it rendered nothing.
+Wherever you are in Angular, you're always within a scope. The scope directly within `ng-app` is the `$rootScope`. Scopes can also be nested, like in the case of controllers.
 
-But we can evaulate simple expressions in our templates, and assignment is one of those. So what if we put `{{guestCatName = '?'}}` into our template?
+In the case of our `guestCatName` variable above, we're not in a controller or directive, so the scope we're in is `$rootScope`. When we typed `{{guestCatName}}` in the root of our app, Angular tried looking up `$rootScope.guestCatName` and came up with `undefined`, which is why it rendered nothing.
+
+But since we can evaulate simple JavaScript expressions in our templates, and assignment is one of those, what if we put `{{guestCatName = '?'}}` into our template?
 
 ```html
-  <h1>Our Cat Cafe</h1>
+<h1>Our Cat Cafe</h1>
 
-  {{guestCatName = 'Charles Whiskerton'}}
+{{guestCatName = 'Charles Whiskerton'}}
 
-  <h2>Today's guest cat is: {{guestCatName}}</h2>
+<h2>Today's guest cat is: {{guestCatName}}</h2>
 ```
 
-We successfully set and retrieved something from our current scope. For reasons you're probably aware of, this kind of logic is frowned upon in templates, so let's move from the V to the C.
+We successfully set and retrieved something from inside our current scope (the $rootScope). For reasons you're probably well aware of, this kind of logic is frowned upon in templates, which is why we have the MVC paradigm. So let's move from the V to the C.
 
 ## Controllers
 
@@ -131,19 +129,40 @@ In Angular, scope is the way templates and controllers interact.
 - Controllers manage $scope, among other things.
 - Can be nested, but probably a better idea to use directives for that.
 
-```html
-<div ng-controller="">
+Let's put all of our current elements in body into a controller called `welcomeCtrl`.
 
-  <div ng-controller="">
-  </div>
+```html
+<div ng-controller="welcomeCtrl">
+
+  <h1>Our Cat Cafe</h1>
+
+  <h2>Today's guest cat is: {{guestCatName}}</h2>
+
+  <h3>Today's discount is: ${{5 * 0.3}}</h3>
 
 </div>
 ```
+
+And now we'll create a controller that will manage those scope variables.
+
+```javascript
+
+angular.module('omgcats')
+  .controller('welcomeCtrl', function($scope) {
+
+    $scope.guestCatName = 'Charles Flufferton';
+
+  })
+```
+
+Now instead of Angular looking at our root scope, it's looking at the `$scope` that `welcomeCtrl` is managing.
 
 ## Let's talk about dependency injection
 
 - Dependency injection -- or DI -- is a powerful way of requiring modules, similar to CommonJS, Browserify, AMD
 - In Angular all you need to inject a dependency is to pass it as a parameter to your controller or service
+
+We just saw DI in action above when we passed `$scope` into our `welcomeCtrl`.
 
 ```javascript
 // Angular reads the parameters and injects them for you to use
