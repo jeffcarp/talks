@@ -320,8 +320,8 @@ Maybe even during the presentation?
 
 ## What are our alternatives?
 
-**Backbone** - [what using Backbone would give us]
-**EmberJS** - [what using Ember would give us]
+- **Backbone** - [what using Backbone would give us]
+- **EmberJS** - [what using Ember would give us]
 
 ## Where to go from here
 
