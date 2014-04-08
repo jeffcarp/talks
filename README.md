@@ -17,14 +17,29 @@ Startup House, 934 Howard St., San Francisco, CA
 
 ## Reasons to use Angular
 
-- It's pretty cool
+> HTML enhanced for web apps
 
-"HTML enhanced for web apps" - Angular site
-"It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents." - Misko Hevry
+angularjs.org
 
-"Hands off" the DOM (as you'll see)
+(what if you wanted a cat picture and could just write `<cat-picture></cat-picture>`?)
 
-"Your UI code should be declarative, and your app code should be imperative"
+> It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents. 
+
+Misko Hevery
+
+- Write UI code declaratively. Your app code should not 
+
+jQuery approach:
+
+- State stored in variables or in the DOM
+- Attach event handlers manually
+- Event handlers manage DOM themselves
+
+Angular approach:
+
+- Just manage your data structures and write the HTML once, Angular will take care of the rest for you
+
+> "Your UI code should be declarative, and your app code should be imperative"
 
 ## Did you hear? A Cat Cafe is coming to San Francisco.
 
@@ -222,6 +237,33 @@ app.controller('catsCtrl',
 
 }];
 ```
+
+## Routing with ngRoute
+
+- Now we want a cats page and a drinks page
+- We use the module ngRoute to do this
+
+```javascript
+app.config(function($routeProvider) {
+  
+  $routeProvider.when('/', {
+    templateUrl: 'index.html',
+    controller: 'homeController'
+  });
+  
+  $routeProvider.when('/', {
+    templateUrl: 'index.html',
+    controller: 'homeController'
+  });
+  
+  $routeProvider.otherwise({
+    redirectTo: '/'
+  });
+  
+});
+```
+
+- Note dependency injection of `$routeProvider`
 
 ## Factories, Services, etc.
 
