@@ -19,7 +19,14 @@ Startup House, 934 Howard St., San Francisco, CA
 
 - It's pretty cool
 
-Did you hear? A Cat Cafe is coming to San Francisco.
+"HTML enhanced for web apps" - Angular site
+"It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents." - Misko Hevry
+
+"Hands off" the DOM (as you'll see)
+
+"Your UI code should be declarative, and your app code should be imperative"
+
+## Did you hear? A Cat Cafe is coming to San Francisco.
 
 But cats are so difficult to manage!
 
