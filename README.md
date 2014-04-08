@@ -264,6 +264,21 @@ app.config(function($routeProvider) {
 ```
 
 - Note dependency injection of `$routeProvider`
+- Now that we've started using ngRoute, we need to tell it where to display the current template on our page.
+- So let's slurp all our markup from our current page into `index.html`, and in its place in our main template we'll put an `<div ng-view></div>`, which tells Angular's routeProvider this is where to put the current template.
+
+```html
+<!doctype html>
+<head>
+  ...
+</head>
+<body>
+
+  <div ng-view></div>
+
+</body>
+</html>
+```
 
 ## Factories, Services, etc.
 
