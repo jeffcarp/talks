@@ -76,4 +76,4 @@ But since we can evaulate simple JavaScript expressions in our templates, and as
 
 We successfully set and retrieved something from inside our current scope (the $rootScope). For reasons you're probably well aware of, this kind of logic is frowned upon in templates, which is why we have the MVC paradigm. So let's move from the V to the C.
 
--> Link to next one
+Next: [Controllers](2-controllers.md)
