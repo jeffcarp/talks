@@ -18,16 +18,14 @@ Startup House, 934 Howard St., San Francisco, CA
 ## Reasons to use Angular
 
 > HTML enhanced for web apps
-
-angularjs.org
+>
+> – angularjs.org
 
 (what if you wanted a cat picture and could just write `<cat-picture></cat-picture>`?)
 
-> It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents. 
-
-Misko Hevery
-
-- Write UI code declaratively. Your app code should not 
+> It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents.
+>
+> – Misko Hevery
 
 jQuery approach:
 
@@ -39,19 +37,11 @@ Angular approach:
 
 - Just manage your data structures and write the HTML once, Angular will take care of the rest for you
 
-> "Your UI code should be declarative, and your app code should be imperative"
-
-## Did you hear? A Cat Cafe is coming to San Francisco.
-
-But cats are so difficult to manage!
-
-## We're going to build a CMS
-
-Not a Content Management System
-
-A **Cat Management System**
-
 ## Structure of this talk
+
+Did you hear? A Cat Cafe is coming to San Francisco. But cats are so difficult to manage! So we're going to build a CMS.
+
+Not a Content Management System, a **Cat Management System**.
 
 - ng-app
 - ng-controller
@@ -76,9 +66,9 @@ A **Cat Management System**
 
   <h1>Our Cat Cafe</h1>
 
-  <h2>Today's guest cat is: {{guestCatName}}</h2>
-
-  <h3>Today's discount is: ${{5 * 0.3}}</h3>
+  <h2>Today's discount is: ${{5 * 0.3}}</h2>
+  
+  <h3>Today's guest cat is: {{guestCatName}}</h3>
 
 </body>
 </html>
