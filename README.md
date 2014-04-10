@@ -43,10 +43,15 @@ Did you hear? A Cat Cafe is coming to San Francisco. But cats are so difficult t
 
 Not a Content Management System, a **Cat Management System**.
 
-- {{one-way-binding}}
-- `ng-app`
-- Controllers
-- `ng-view`
+1. [Thinking with Angular](https://github.com/jeffcarp/angularjs-talk/blob/master/1-thinking-with-angular.md)
+2. [Controllers](https://github.com/jeffcarp/angularjs-talk/blob/master/2-controllers.md)
+3. [Dependency Injection](https://github.com/jeffcarp/angularjs-talk/blob/master/3-dependency-injection.md)
+4. [Routing](https://github.com/jeffcarp/angularjs-talk/blob/master/4-routing.md)
+5. [Models](https://github.com/jeffcarp/angularjs-talk/blob/master/5-models.md)
+6. Pitfalls
+7. Persistence
+8. Epilogue
+
 - Two-way binding with `ng-model`
 - Directives
 - Persistence with Firebase and AngularFire
