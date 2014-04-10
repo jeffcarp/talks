@@ -59,8 +59,7 @@ Not a Content Management System, a **Cat Management System**.
 <!doctype html>
 <head>
   <title>Cat Cafe App</title>
-  <!-- TODO: include Angular -->
-  <script></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 </head>
 <body>
 
