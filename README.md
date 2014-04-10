@@ -43,12 +43,12 @@ Did you hear? A Cat Cafe is coming to San Francisco. But cats are so difficult t
 
 Not a Content Management System, a **Cat Management System**.
 
-- ng-app
-- ng-controller
-- ng-view
-  - ng-bind || {{}}
-  - ng-model
-- app.directive()
+- {{one-way-binding}}
+- `ng-app`
+- Controllers
+- `ng-view`
+- Two-way binding with `ng-model`
+- Directives
 - Persistence with Firebase and AngularFire
 
 ## ng-app
