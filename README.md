@@ -43,7 +43,7 @@ Did you hear? A Cat Cafe is coming to San Francisco. But cats are so difficult t
 
 Not a Content Management System, a **Cat Management System**.
 
-1. [Thinking with Angular](https://github.com/jeffcarp/angularjs-talk/blob/master/1-thinking-with-angular.md)
+1. [Thinking with Angular](1-thinking-with-angular.md)
 2. [Controllers](https://github.com/jeffcarp/angularjs-talk/blob/master/2-controllers.md)
 3. [Dependency Injection](https://github.com/jeffcarp/angularjs-talk/blob/master/3-dependency-injection.md)
 4. [Routing](https://github.com/jeffcarp/angularjs-talk/blob/master/4-routing.md)
