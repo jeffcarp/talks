@@ -1,4 +1,4 @@
-## ng-app
+## The Angular way of thinking
 
 - Let's start off with a blank HTML page.
 
@@ -30,29 +30,25 @@ This just renders the handlebars to the page without transforming them. In order
 </body>
 ```
 
-However it doesn't have to live in `<body>`, it can just live on your sidebar, for instance. `<aside ng-app></aside>`. Angular will not touch the DOM outside of the element on which you declared `ng-app`.
+Note: `ng-app` it doesn't have to live in `<body>`, it can just live on your sidebar, for instance. `<aside ng-app></aside>`. Angular will not touch the DOM outside of the element on which you declared `ng-app`.
 
-### The Angular way of thinking
-
-Let's take a step back and look at our first directive: `ng-app`
-
-Angular is centered around **directives**, which are functionality resembling a 'superset' of HTML. Directives come in 4 forms:
+Let's take a step back and look at our first directive: `ng-app`. Angular is centered around **directives**, which are functionality resembling a superset of HTML. Directives come in 4 forms:
 
 ```html
 <!-- Elements -->
-<form></form>
+<cat-picture></cat-picture>
 
 <!-- Attributes -->
-<img ng-src="example.com/{{2 + 2}}/asdf.jpg" />
+<div cat-picture></div>
 
 <!-- Classes -->
-<div class="our-dir: 2 + 2;"></div>
+<div class="cat-picture"></div>
 
 <!-- Comments -->
-<!-- directive: our-dir: 2 + 2 -->
+<!-- directive: cat-picture -->
 ```
 
-However, the first two - Elements and Attributes - are the most common. We can write your own directives, which we'll see later down the road.
+The first two - Elements and Attributes - are the most common. We can write your own directives, which we'll see later down the road.
 
 Angular also replaces or wraps some existing HTML elements with its own directives, for example, `<form>` is an Angular directive.
 
@@ -80,3 +76,4 @@ But since we can evaulate simple JavaScript expressions in our templates, and as
 
 We successfully set and retrieved something from inside our current scope (the $rootScope). For reasons you're probably well aware of, this kind of logic is frowned upon in templates, which is why we have the MVC paradigm. So let's move from the V to the C.
 
+-> Link to next one
