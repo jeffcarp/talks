@@ -60,7 +60,7 @@ Directives can be used for many purposes:
 
 ## Scope
 
-Wherever you are in Angular, you're always within a scope. The scope directly within `ng-app` is the `$rootScope`. Scopes can also be nested, like in the case of controllers.
+Wherever you are in Angular, you're always within a scope. The scope directly within `ng-app` is called `$rootScope`. When you declare a controller, it creates its own scope.
 
 In the case of our `guestCatName` variable above, we're not in a controller or directive, so the scope we're in is `$rootScope`. When we typed `{{guestCatName}}` in the root of our app, Angular tried looking up `$rootScope.guestCatName` and came up with `undefined`, which is why it rendered nothing.
 
@@ -69,7 +69,7 @@ But since we can evaulate simple JavaScript expressions in our templates, and as
 ```html
 <h1>Our Cat Cafe</h1>
 
-{{guestCatName = 'Charles Whiskerton'}}
+{{guestCatName = 'Charles Whiskerton'; ''}}
 
 <h2>Today's guest cat is: {{guestCatName}}</h2>
 ```
