@@ -31,10 +31,11 @@ Startup House, 934 Howard St., San Francisco, CA
 
 to            | jQuery approach | Angular approach
 ------------- | --------------- | ----------------
-template state | in the DOM &#xca0;&#x256d;&#x256e;&#xca0; | assigned to $scope
 the DOM  | insert/change/remove manually | declare HTML once, Angular takes care of rendering
 back-end/APIs | $.ajax | $http
-click handler example | `$('a').click(handler);` | `<span ng-click="handler()">Cool</span>`
+one-way binding | `$('h1').text(headlineStr);` | `<h1>{{headlineStr}}</h1>`
+example: click handlers | `$('a').click(handler);` | `<span ng-click="handler()">Cool</span>`
+two-way binding | (none) | `<input type="text" ng-model="name" />`
 
 ## Structure of this talk
 
