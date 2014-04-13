@@ -1,4 +1,4 @@
-## The Angular way of thinking
+# Thinking with Angular
 
 - Let's start off with a blank HTML page.
 
