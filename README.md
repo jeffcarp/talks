@@ -29,14 +29,6 @@ Startup House, 934 Howard St., San Francisco, CA
 
 – Amit Upadhyay - http://amitu.com/angularjs/
 
-to            | jQuery approach | Angular approach
-------------- | --------------- | ----------------
-the DOM  | insert/change/remove manually | declare HTML once, Angular takes care of rendering
-back-end/APIs | $.ajax | $http
-one-way binding | `$('h1').text(headlineStr);` | `<h1>{{headlineStr}}</h1>`
-example: click handlers | `$('a').click(handler);` | `<span ng-click="handler()">Cool</span>`
-two-way binding | (none) | `<input type="text" ng-model="name" />`
-
 ## Structure of this talk
 
 Did you hear? A Cat Cafe is coming to San Francisco. But cats are so difficult to manage! So we're going to build a CMS.
