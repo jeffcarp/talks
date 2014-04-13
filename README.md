@@ -27,6 +27,9 @@ Startup House, 934 Howard St., San Francisco, CA
 >
 > – Misko Hevery
 
+> Best way to understand angularjs is to see angular not so much as a javascript library but as enhanced HTML.
+> http://amitu.com/angularjs/
+
 jQuery approach:
 
 - State stored in variables or in the DOM
