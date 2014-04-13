@@ -17,18 +17,24 @@ Startup House, 934 Howard St., San Francisco, CA
 
 ## Reasons to use Angular
 
-> HTML enhanced for web apps
->
-> – angularjs.org
+#### *"HTML enhanced for web apps"*
 
-(what if you wanted a cat picture and could just write `<cat-picture></cat-picture>`?)
+– angularjs.org
 
-> It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents.
->
-> – Misko Hevery
+#### *"It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents."*
 
-> Best way to understand angularjs is to see angular not so much as a javascript library but as enhanced HTML.
-> http://amitu.com/angularjs/
+– Misko Hevery
+
+#### *"[the] Best way to understand angularjs is to see angular not so much as a javascript library but as enhanced HTML."*
+
+– Amit Upadhyay - http://amitu.com/angularjs/
+
+to            | jQuery approach | Angular approach
+------------- | --------------- | ----------------
+template state | in the DOM &#xca0;&#x256d;&#x256e;&#xca0; | assigned to $scope
+the DOM  | insert/change/remove manually | declare HTML once, Angular takes care of rendering
+back-end/APIs | $.ajax | $http
+click handler example | `$('a').click(handler);` | `<span ng-click="handler()">Cool</span>`
 
 jQuery approach:
 
