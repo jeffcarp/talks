@@ -56,6 +56,15 @@ Not a Content Management System, a **Cat Management System**.
 - Directives
 - Persistence with Firebase and AngularFire
 
+## Disclaimers
+
+- If you've already one a lot with Angular, you may want to skip this talk.
+- There may be better ways of doing things than the ones we go through here.
+- I am not a lawyer.
+
+## Comments, Advice, Inquiries
+
+[@jcarp](https://twitter.com/jcarp) on Twitter or email [hi@jeff.is](mailto:hi@jeff.is)
 
 
 
