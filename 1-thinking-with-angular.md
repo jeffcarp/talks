@@ -58,6 +58,16 @@ Directives can be used for many purposes:
 - Macro-expansion (if you find yourself repeating the same HTML structure)
 - Extending built-in elements (like `<form>`)
 
+#### Directives in practice
+
+to            | jQuery approach | Angular approach
+------------- | --------------- | ----------------
+the DOM  | insert/change/remove manually | declare HTML once, Angular takes care of rendering
+back-end/APIs | $.ajax | $http
+one-way binding | `$('h1').text(headlineStr);` | `<h1>{{headlineStr}}</h1>` or `<h1 ng-bind="headlineStr"></h1>`
+example: click handlers | `$('a').click(handler);` | `<span ng-click="handler()">Cool</span>`
+two-way binding | (none) | `<input type="text" ng-model="name" />`
+
 ## Scope
 
 Wherever you are in Angular, you're always within a scope. The scope directly within `ng-app` is called `$rootScope`. When you declare a controller, it creates its own scope.
