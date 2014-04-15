@@ -46,3 +46,5 @@ app.controller('homeCtrl', function($scope) {
 Now let's take a look at our page. Our view's `{{guestCatName}}}` should be bound to our controller's `$scope.guestCatName`.
 
 Now instead of Angular looking at our root scope, it's looking at the `$scope` that `welcomeCtrl` is managing.
+
+On to [Dependency Injection](3-dependency-injection.md)

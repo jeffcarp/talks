@@ -17,25 +17,17 @@ Startup House, 934 Howard St., San Francisco, CA
 
 ## Reasons to use Angular
 
-> HTML enhanced for web apps
->
-> – angularjs.org
+### *"HTML enhanced for web apps"*
 
-(what if you wanted a cat picture and could just write `<cat-picture></cat-picture>`?)
+– angularjs.org
 
-> It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents.
->
-> – Misko Hevery
+### *"It's what Google's vision for what a browser would be like if it were built from the ground up (instead of just rendering documents."*
 
-jQuery approach:
+– Misko Hevery
 
-- State stored in variables or in the DOM
-- Attach event handlers manually
-- Event handlers manage DOM themselves
+### *"[the] Best way to understand angularjs is to see angular not so much as a javascript library but as enhanced HTML."*
 
-Angular approach:
-
-- Just manage your data structures and write the HTML once, Angular will take care of the rest for you
+– Amit Upadhyay - http://amitu.com/angularjs/
 
 ## Structure of this talk
 
@@ -44,10 +36,10 @@ Did you hear? A Cat Cafe is coming to San Francisco. But cats are so difficult t
 Not a Content Management System, a **Cat Management System**.
 
 1. [Thinking with Angular](1-thinking-with-angular.md)
-2. [Controllers](https://github.com/jeffcarp/angularjs-talk/blob/master/2-controllers.md)
-3. [Dependency Injection](https://github.com/jeffcarp/angularjs-talk/blob/master/3-dependency-injection.md)
-4. [Routing](https://github.com/jeffcarp/angularjs-talk/blob/master/4-routing.md)
-5. [Models](https://github.com/jeffcarp/angularjs-talk/blob/master/5-models.md)
+2. [Controllers](2-controllers.md)
+3. [Dependency Injection](3-dependency-injection.md)
+4. [Routing](4-routing.md)
+5. [Models](5-models.md)
 6. Pitfalls
 7. Persistence
 8. Epilogue
@@ -56,6 +48,15 @@ Not a Content Management System, a **Cat Management System**.
 - Directives
 - Persistence with Firebase and AngularFire
 
+## Disclaimers
+
+- If you've already one a lot with Angular, you may want to skip this talk.
+- There may be better ways of doing things than the ones we go through here.
+- I am not a lawyer.
+
+## Comments, Advice, Inquiries
+
+[@jcarp](https://twitter.com/jcarp) on Twitter or email [hi@jeff.is](mailto:hi@jeff.is)
 
 
 

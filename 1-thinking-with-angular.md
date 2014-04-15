@@ -1,4 +1,4 @@
-## The Angular way of thinking
+# Thinking with Angular
 
 - Let's start off with a blank HTML page.
 
@@ -57,6 +57,16 @@ Directives can be used for many purposes:
 - Creating re-usable components (like a file upload directive)
 - Macro-expansion (if you find yourself repeating the same HTML structure)
 - Extending built-in elements (like `<form>`)
+
+#### Directives in practice
+
+to            | jQuery approach | Angular approach
+------------- | --------------- | ----------------
+the DOM  | insert/change/remove manually | declare HTML once, Angular takes care of rendering
+back-end/APIs | $.ajax | $http
+one-way binding | `$('h1').text(headlineStr);` | `<h1>{{headlineStr}}</h1>` or `<h1 ng-bind="headlineStr"></h1>`
+example: click handlers | `$('a').click(handler);` | `<span ng-click="handler()">Cool</span>`
+two-way binding | (none) | `<input type="text" ng-model="name" />`
 
 ## Scope
 
