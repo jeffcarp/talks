@@ -1,4 +1,6 @@
-window.app = angular.module('app', ['ngRoute'])
+window.app = angular.module('app', ['ngRoute', 'firebase'])
+
+.value('firebaseURI', 'https://catcafe.firebaseio.com/')
 
 .config(function($routeProvider, $locationProvider) {
 
@@ -31,8 +33,22 @@ window.app = angular.module('app', ['ngRoute'])
   };
 })
 
-.controller('ordersCtrl', function($scope) {
-  console.log('ordersCtrl');
+.controller('ordersCtrl', function($scope, Orders) {
+  $scope.orders = Orders;
+  $scope.newOrder = '';
+
+  $scope.placeOrder = function() {
+    if ($scope.orderForm.$invalid) {
+      return alert('Please fill in your order');
+    }
+    Orders.$add($scope.newOrder, function() {
+      $scope.newOrder = '';
+    });
+  };
+})
+
+.factory('Orders', function($firebase, firebaseURI) {
+  return $firebase(new Firebase(firebaseURI+'orders'));
 })
 
 .filter('usd', function() {

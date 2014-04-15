@@ -9,6 +9,12 @@ body {
   max-width: 640px;
 }
 
+input[type=text] {
+  width: 100%;
+  font-size: 16px;
+  padding: 0.2em;
+}
+
 .cat {
   display: inline-block;
 }

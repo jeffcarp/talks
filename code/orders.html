@@ -1,1 +1,22 @@
 <h1>Orders</h1>
+
+<form
+  name="orderForm"
+  ng-submit="placeOrder()">
+
+  <input
+    type="text"
+    ng-model="newOrder"
+    placeholder="Your order"
+    ng-required="true"
+    />
+
+  <input
+    type="submit"
+    value="Place Order"
+    />
+</form>
+
+<div ng-repeat="order in orders">
+  <span>{{order}}</span>
+</div>
