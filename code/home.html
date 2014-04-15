@@ -1,0 +1,10 @@
+<h2>Regular price: {{price|usd}}</h2>
+
+<h2>Today's discounted price is {{discountedPrice()|usd}}</h2>
+
+<div ng-repeat="cat in cats" class="cat">
+  <div>
+    <img src="http://placekitten.com/180/180" />
+  </div>
+  {{cat.name}}
+</div>

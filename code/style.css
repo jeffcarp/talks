@@ -1,0 +1,14 @@
+body {
+  background-color: #eee;
+}
+
+#container {
+  background-color: white;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.cat {
+  display: inline-block;
+}

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>SF Cat Cafe</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body ng-app="app">
+
+  <div id="container">
+    <h1>SF Cat Cafe</h1>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/orders">Orders</a>
+    </nav>
+
+    <ng-view></ng-view>
+  </div>
+
+</body>
+</html>
