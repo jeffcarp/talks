@@ -511,7 +511,20 @@ Orders.$add($scope.newOrder, function() {
 });
 ```
 
+- Now that we have Firebase working, let's test it out
+- Get LAN IP address from Network Utility
+- Append port 5000 (or what we're using)
+- Add to header
+
+```
+<h3>Access: http://192.168.0.181:5000/orders</h3>
+```
+
 Left to do:
 - Create a Directive (but what would be a good example?)
   - Something that exists between pages
 - Write simple tests
+
+Take care of:
+- Reverse order of Orders displayed
+- Write a simple nodejs server that allows access to / and /orders but serves index.html
