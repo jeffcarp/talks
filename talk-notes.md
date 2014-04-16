@@ -523,6 +523,7 @@ Orders.$add($scope.newOrder, function() {
 Left to do:
 - Create a Directive (but what would be a good example?)
   - Something that exists between pages
+  - Or we could do a simple image loading directive?
 - Write simple tests
 
 Take care of:
