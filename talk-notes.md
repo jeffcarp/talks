@@ -1,14 +1,14 @@
-Abbreviated version of notes for the actual talk.
+This is an abbreviated version of the notes for the actual talk.
 
 - Thank you to the meetup organizers, TJ and ...
 
-# Logistics
+## Logistics
 
 - The talk will take about 50 minutes
 - I'll stop for questions at the end
 - Also feel free to ask during
 
-# Who am I
+## Who am I
 
 - Jeff Carpenter
 - Comments, feedback, want to hack on something
