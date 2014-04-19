@@ -36,6 +36,10 @@
 2. Fill in the implementation and explain what's happening
 3. Lather, rinse, repeat
 
+- In terms of audience participation, if you have a question, please ask it.
+- I've budgeted time for both questions at the end and questions that might come up during the talk.
+- We can look at this talk like a pair-pair-pair-pair-pair programming session, so please don't hold back if you have something to say.
+
 - Let's get started
 
 ```html
