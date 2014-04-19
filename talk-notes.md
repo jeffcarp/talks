@@ -1,6 +1,11 @@
 This is an abbreviated version of the notes for the actual talk.
 
-- Thank you to the meetup organizers, TJ and ...
+- Thank you to the meetup organizers for putting this meetup together:
+  - TJ
+  - Silviu
+  - Vera
+  - Kasey
+  - Ben
 
 ## Logistics
 
