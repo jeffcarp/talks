@@ -1,5 +1,4 @@
-This is an abbreviated version of the notes for the actual talk.
-
+- This is an abbreviated version of the notes for the actual talk.
 - Thank you to the meetup organizers for putting this meetup together:
   - TJ
   - Silviu
@@ -21,21 +20,23 @@ This is an abbreviated version of the notes for the actual talk.
 - Improvements, fixes
   - https://github.com/jeffcarp/angularjs-talk
 
-## Objective, Outline, Style
+### Objective
 
-Objective: to give you a brief overview of the parts of AngularJS and the tools to get started.
+- To give you a brief overview of the parts of AngularJS and the tools to get started.
 
-Outline:
+### Outline
 
-TODO
+- TODO
 
-Style:
+### Style
 
-Most of this talk will take the following form:
+- Most of this talk will take the following form:
 
 1. Code the end result that we want, see that it breaks
 2. Fill in the implementation and explain what's happening
 3. Lather, rinse, repeat
+
+- Let's get started
 
 ```html
 <!doctype html>
