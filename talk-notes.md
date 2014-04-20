@@ -1,3 +1,5 @@
+## Talk Notes
+
 - This is an abbreviated version of the notes for the actual talk.
 - Thank you to the meetup organizers for putting this meetup together:
   - TJ
@@ -6,7 +8,7 @@
   - Kasey
   - Ben
 
-## Logistics
+### Logistics
 
 - The talk will take about 50 minutes
 - I'll stop for questions at the end
@@ -22,11 +24,7 @@
 
 ### Objective
 
-- To give you a brief overview of the parts of AngularJS and the tools to get started.
-
-### Outline
-
-- TODO
+- To give you a brief overview of AngularJS and the tools to learn more.
 
 ### Style
 
@@ -36,11 +34,18 @@
 2. Fill in the implementation and explain what's happening
 3. Lather, rinse, repeat
 
-- In terms of audience participation, if you have a question, please ask it.
-- I've budgeted time for both questions at the end and questions that might come up during the talk.
-- We can look at this talk like a pair-pair-pair-pair-pair programming session, so please don't hold back if you have something to say.
+- Audience participation
+  - If you have a question, please ask it.
+  - If you have something helpful to add, please do so.
+  - Let's look at this talk as if it were a pair-pair-pair-pair-pair programming session
 
 - Let's get started
+- Did you hear a cat cafe is coming to SF?
+  - We all know herding cats is kind of like... herding cats
+  - Let's make a cat cafe management app
+- First, let's lay down this simple HTML page
+- Ask: "If you were to go to a cat cafe, what would you pay for admission?"
+  - Use answer for price
 
 ```html
 <!doctype html>
@@ -55,7 +60,7 @@
 
   <h2>Regular price: $10</h2>
 
-  <h2>Today's discounted price is {{10 * (1 - 0.3)}}</h2>
+  <h3>Today's discounted price is ${{10 * (1 - 0.3)}}</h3>
 
 </body>
 </html>
@@ -103,6 +108,18 @@ window.app = angular.module('app', []);
 <body ng-app="app">
 ```
 
+- To quickly demonstrate $rootScope
+
+```
+.run(function($rootScope) {
+  $rootScope.discount = 0.3;
+})
+```
+
+- Change discount to 0.4
+- Refresh, watch change
+- Describe what .run is
+- Delete .run
 - Add current markup to homeCtrl
 
 ```
@@ -163,8 +180,8 @@ $scope.discountedPrice = function() {
 
 ```
 $scope.cats = [
-  {name: 'Bigglesworth'},
-  {name: 'Mr. Fluffles'},
+  {name: 'Mr. Bigglesworth'},
+  {name: 'Cheshire Cat'},
   {name: 'Gorby Puff Puff'}
 ];
 ```
@@ -244,6 +261,7 @@ window.app = angular.module('app', ['ngRoute'])
 
 - Now add our first route definition
 - Points to homeCtrl
+- Let's talk about Dependency Injection
 
 ```
 .config(function($routeProvider, $locationProvider) {
