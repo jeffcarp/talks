@@ -1,41 +1,46 @@
 ## Let's talk about dependency injection
 
-- Dependency injection -- or DI -- is a powerful way of requiring modules, similar to CommonJS, Browserify, AMD
-- In Angular all you need to inject a dependency is to pass it as a parameter to your controller or service
+In this chapter we'll add some CSS to spruce up the styles of our currently barebones site, and while we do that we'll talk about dependency injection in Angular. First, we'll create a file `style.css` and add a reference to it in our main `index.html` file.
 
-We just saw DI in action above when we passed `$scope` into our `welcomeCtrl`.
-
-```javascript
-// Angular reads the parameters and injects them for you to use
-app.controller('catsCtrl', function($scope, $location, CatService) {
-
-  $scope.inc = function(x) {
-    return x + 1;
-  };
-
-  $scope.addACat = function(catName) {
-    CatService.add({
-      name: catName
-    });
-  };
-});
+```
+<link rel="stylesheet" type="text/css" href="style.css" />
 ```
 
-You can use DI with:
+And in `style.css` we'll fill out some styles.
 
-```javascript
-// Providers
+```
+body {
+  background-color: #eee;
+}
 
-// Services
-ourApp.factory('ourService', function(CatService) {
-});
+#container {
+  background-color: white;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 640px;
+}
 
-// Directives
-ourApp.directive('ourDirective', function(CatService) {
-});
+.cat {
+  display: inline-block;
+}
+```
 
-// Filters
-ourApp.filter('ourFilter', function(CatService) {
-});
+Dependency injection -- or DI -- is a powerful way of requiring modules, similar to CommonJS, Browserify, or AMD. In Angular all you need to inject a dependency is to pass it as a parameter to your controller or service.
 
-// Run
+On the previous page we saw DI in action above when we passed `$scope` into our `welcomeCtrl`. Many thing in Angular: controllers, filters, directives, services, factories, support dependency injection. We'll see more examples of this as we go on.
+
+To make our above styles work, we'll need to add an ID to our controller.
+
+```
+<div ng-controller="homeCtrl" id="container">
+```
+
+And since no app would be complete without pictures of cats, let's add with each cat in our template (inside the `ng-repeat`).
+
+```
+<div>
+  <img src="http://placekitten.com/180/180" />
+</div>
+```
+
+Next: [Routing](4-routing.md)

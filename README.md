@@ -9,6 +9,11 @@ HTML5 Live Code Meetup
 Startup House, 934 Howard St., San Francisco, CA
 ```
 
+## Todo
+
+- Change CDN links to be consistent
+- Add directive section at end
+
 ## Assumptions
 
 - You are familiar with JavaScript
