@@ -47,6 +47,15 @@
 - Ask: "If you were to go to a cat cafe, what would you pay for admission?"
   - Use answer for price
 
+### First things first
+
+- Mad Libs
+- I need:
+  - A noun
+  - An adjective
+  - A percentage
+  - A dollar amount
+
 ```html
 <!doctype html>
 <html>
@@ -250,7 +259,7 @@ body {
 - Add it's script tag to <head>
 
 ```
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
+<script src="//cdnjs.buttflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
 ```
 
 - Add it to our module includes
