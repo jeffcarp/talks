@@ -43,4 +43,6 @@ And since no app would be complete without pictures of cats, let's add with each
 </div>
 ```
 
+If you have the [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) installed, open it up and inspect the scope variables we've created so far.
+
 Next: [Routing](4-routing.md)

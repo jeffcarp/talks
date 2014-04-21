@@ -13,6 +13,8 @@ Startup House, 934 Howard St., San Francisco, CA
 
 - Change CDN links to be consistent
 - Add directive section at end
+- Improve server (all requests serve index.html)
+- Write simple tests or have test disclaimer
 
 ## Assumptions
 
@@ -45,13 +47,11 @@ Not a Content Management System, a **Cat Management System**.
 3. [Dependency Injection](3-dependency-injection.md)
 4. [Routing](4-routing.md)
 5. [Models](5-models.md)
-6. Pitfalls
-7. Persistence
-8. Epilogue
-
-- Two-way binding with `ng-model`
-- Directives
-- Persistence with Firebase and AngularFire
+6. [Two-way binding](6-two-way-binding.md)
+7. [Filters](7-filters.md)
+8. [Persistence](8-persistence.md)
+9. [Directives](9-directives.md)
+10. [Epilogue](epilogue.md)
 
 ## Disclaimers
 

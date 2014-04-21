@@ -261,7 +261,7 @@ body {
 - Add it's script tag to <head>
 
 ```
-<script src="//cdnjs.buttflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
 ```
 
 - Add it to our module includes
@@ -294,9 +294,9 @@ window.app = angular.module('app', ['ngRoute'])
 - Now home.html looks like:
 
 ```
-<h2>Regular price: {{price|usd}}</h2>
+<h2>Regular price: ${{price}}</h2>
 
-<h2>Today's discounted price is {{discountedPrice()|usd}}</h2>
+<h2>Today's discounted price is ${{discountedPrice()}}</h2>
 
 <div ng-repeat="cat in cats" class="cat">
   <div>
@@ -336,7 +336,7 @@ window.app = angular.module('app', ['ngRoute'])
 })
 ```
 
-- Now we need to defile the controller ordersCtrl and the template orders.html
+- Now we need to define the controller ordersCtrl and the template orders.html
 
 ```
 .controller('ordersCtrl', function($scope) {
@@ -380,6 +380,7 @@ window.app = angular.module('app', ['ngRoute'])
   $scope.orders = Orders.all();
 })
 ```
+
 - Now let's put the orders in a list
 
 ```
@@ -408,7 +409,7 @@ $scope.newOrder = '';
 
 - And add a corresponding style for the input
 
-```
+```css
 input[type=text] {
   width: 100%;
   font-size: 16px;
@@ -467,14 +468,14 @@ $scope.placeOrder = function() {
 ```
 
 - Notice how we're able to add blank orders
-- Let's add 'required' to our input
+- Let's add 'ng-required' to our input to demonstrate validation
 
 ```
 <input
   type="text"
   ng-model="newOrder"
   placeholder="Your order"
-  required
+  ng-required="true"
   />
 ```
 
@@ -545,8 +546,8 @@ window.app = angular.module('app', ['ngRoute', 'firebase'])
 .value('firebaseURI', 'https://catcafe.firebaseio.com/')
 ```
 
-- Delete the existing Order service
-- And now rework our Order service as a Firebase service
+- Delete the existing Orders service
+- And now rework our Orders service as a Firebase service
 
 ```
 .factory('Orders', function($firebase, firebaseURI) {
@@ -575,12 +576,3 @@ Orders.$add($scope.newOrder, function() {
 <h3>Access: http://192.168.0.181:5000/orders</h3>
 ```
 
-Left to do:
-- Create a Directive (but what would be a good example?)
-  - Something that exists between pages
-  - Or we could do a simple image loading directive?
-- Write simple tests
-
-Take care of:
-- Reverse order of Orders displayed
-- Write a simple nodejs server that allows access to / and /orders but serves index.html
