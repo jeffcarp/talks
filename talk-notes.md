@@ -17,6 +17,8 @@
 ## Who am I
 
 - Jeff Carpenter
+- Work at Bloodhound, make a sales lead collecting app/dashboard
+- Have been using Angular for about a year
 - Comments, feedback, want to hack on something
   - @jcarp or hi@jeff.is
 - Improvements, fixes
