@@ -12,7 +12,6 @@ Startup House, 934 Howard St., San Francisco, CA
 ## Todo
 
 - Change CDN links to be consistent
-- Add directive section at end
 - Improve server (all requests serve index.html)
 - Write simple tests or have test disclaimer
 

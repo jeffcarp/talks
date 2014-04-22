@@ -576,3 +576,30 @@ Orders.$add($scope.newOrder, function() {
 <h3>Access: http://192.168.0.181:5000/orders</h3>
 ```
 
+- We've used many directives so far, now let's build a simple one
+- We want a lot of customers
+- So we'll bring back the blink tag
+- Going to highlight our discount
+- In app.js
+
+```
+.directive('blink', function() {
+  return {
+    restrict: 'E',
+    transclude: true,
+    link: function(scope, elem, attrs) {
+      scope.visible = true;
+      setInterval(function() {
+        scope.visible = !scope.visible;
+        scope.$digest();
+      }, 1e3);
+    },
+    template: '<span ng-transclude ng-show="visible"></span>'
+  };
+})
+```
+
+- Directives can come in 4 forms, restrict says it can only be an 'E'lement
+- Transclude picks up any original children and outputs them wherever you use `ng-transclude`
+- link is the function that we supply to help link the scope variable and template
+- template is what is outputted to the DOM - for anything bigger we'd use templateUrl

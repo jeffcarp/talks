@@ -56,3 +56,18 @@ window.app = angular.module('app', ['ngRoute', 'firebase'])
     return '$'+Number(str).toFixed(2);
   };
 })
+
+.directive('blink', function() {
+  return {
+    restrict: 'E',
+    transclude: true,
+    link: function(scope, elem, attrs) {
+      scope.visible = true;
+      setInterval(function() {
+        scope.visible = !scope.visible;
+        scope.$digest();
+      }, 1e3);
+    },
+    template: '<span ng-transclude ng-show="visible"></span>'
+  };
+})
