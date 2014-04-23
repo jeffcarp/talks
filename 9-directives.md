@@ -18,3 +18,5 @@ This entire talk, we've been using directives. Angular is built out of directive
   };
 })
 ```
+
+Next: [Epilogue](epilogue.md)
