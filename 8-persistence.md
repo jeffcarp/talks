@@ -43,4 +43,4 @@ Orders.$add($scope.newOrder, function() {
 
 Now if you go back to your page, you should be able to add orders and see them persist across page loads. If you're using the firebaseURI specified above, you should already see a bunch of items that other people have added. If you want your own Firebase to play with, visit their website and paste your new URI in instead.
 
-
+Next: [Directives](9-directives.md)
