@@ -26,11 +26,9 @@
 ### Style
 
 - Most of this talk will take the following form:
-
-1. Code the end result that we want, see that it breaks
-2. Fill in the implementation and explain what's happening
-3. Lather, rinse, repeat
-
+- 1. Code the end result that we want, see that it breaks
+- 2. Fill in the implementation and explain what's happening
+- 3. Lather, rinse, repeat
 - Audience participation
 - If you have a question, please ask it.
 - If you have something helpful to add, please do so.
