@@ -1,12 +1,9 @@
 ## Talk Notes
 
 - This is an abbreviated version of the notes for the actual talk.
-- Thank you to the meetup organizers for putting this meetup together:
-  - TJ
-  - Silviu
-  - Vera
-  - Kasey
-  - Ben
+- A version with full text explanations is up on GitHub: jeffcarp/angularjs-talk
+- Thank you to the meetup organizers for putting this meetup together
+- TJ, Silviu, Vera, Kasey, Ben
 
 ### Logistics
 
@@ -19,10 +16,8 @@
 - Jeff Carpenter
 - Work at Bloodhound, make a sales lead collecting app/dashboard
 - Have been using Angular for about a year
-- Comments, feedback, want to hack on something
-  - @jcarp or hi@jeff.is
-- Improvements, fixes
-  - https://github.com/jeffcarp/angularjs-talk
+- Comments, feedback, want to hack on something: @jcarp on Twitter or hi@jeff.is
+- Improvements, fixes: https://github.com/jeffcarp/angularjs-talk
 
 ### Objective
 
@@ -37,26 +32,24 @@
 3. Lather, rinse, repeat
 
 - Audience participation
-  - If you have a question, please ask it.
-  - If you have something helpful to add, please do so.
-  - Let's look at this talk as if it were a pair-pair-pair-pair-pair programming session
+- If you have a question, please ask it.
+- If you have something helpful to add, please do so.
+- Let's look at this talk as if it were a pair-pair-pair-pair-pair programming session
 
 - Let's get started
 - Did you hear a cat cafe is coming to SF?
-  - We all know herding cats is kind of like... herding cats
-  - Let's make a cat cafe management app
+- We all know herding cats is kind of like... herding cats
+- Let's make a cat cafe management app
 - First, let's lay down this simple HTML page
-- Ask: "If you were to go to a cat cafe, what would you pay for admission?"
-  - Use answer for price
 
 ### First things first
 
 - Mad Libs
 - I need:
-  - A noun
-  - An adjective
-  - A percentage
-  - A dollar amount
+- A noun
+- An adjective
+- A percentage
+- A dollar amount
 
 ```html
 <!doctype html>
@@ -77,7 +70,7 @@
 </html>
 ```
 
-- Now we'll serve this easily
+- Now we'll serve this easily (I've aliased python's simpleHTTPServer)
 
 ```
 servedir
@@ -254,7 +247,6 @@ body {
 - Open up AngularJS Batarang
 - Show price, discount, etc. in current scope
 - This will be useful later
-
 - Now let's add a separate page for ordering drinks
 - That means we'll need some routing
 - ngRoute is a separate library as of [...]
@@ -397,7 +389,7 @@ $scope.newOrder = '';
 ```
 
 - Two-way binding means that a change in our controller state ($scope) will update the DOM
-  - And a change in the DOM will update our $scope
+- And a change in the DOM will update our $scope
 
 ```
 <input
@@ -444,8 +436,8 @@ $scope.placeOrder = function() {
 - Now crack open the AngularJS batarang
 - Notice how $scope.newOrder updates as we type
 - Notice how our $scope.placeOrder modified $scope as it said it would
-  - $scope.orders now has length 2
-  - $scope.newOrder is now blank again
+- $scope.orders now has length 2
+- $scope.newOrder is now blank again
 - Let's make this into a real form so we can use ng-submit, which will let use use the enter key to submit
 - Also replace the button with a real submit button
 
@@ -505,8 +497,8 @@ $scope.price = 12;
 
 - Now the discounted price is a repeating decimal
 - What if we had a generalized way of displaying money?
-  - Adds dollar sign automatically
-  - Always rounds to 2 decimal places
+- Adds dollar sign automatically
+- Always rounds to 2 decimal places
 - This would be good for a filter
 
 ```
@@ -603,3 +595,7 @@ Orders.$add($scope.newOrder, function() {
 - Transclude picks up any original children and outputs them wherever you use `ng-transclude`
 - link is the function that we supply to help link the scope variable and template
 - template is what is outputted to the DOM - for anything bigger we'd use templateUrl
+- We'll stop here
+- We only scratched the surface of what you can do with AngularJS
+- I've put up links to further reading and tutorials in the GitHub repo
+- Questions?
