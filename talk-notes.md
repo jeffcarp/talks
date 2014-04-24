@@ -1,8 +1,9 @@
 ## Talk Notes
 
-- This is an abbreviated version of the notes for the actual talk.
-- A version with full text explanations is up on GitHub: jeffcarp/angularjs-talk
-- Thank you to the meetup organizers for putting this meetup together
+> This is an abbreviated version of the notes for the actual talk.
+
+- Hi everyone
+- First and foremost, thank you to the meetup organizers for putting this meetup together
 - TJ, Silviu, Vera, Kasey, Ben
 
 ### Logistics
@@ -19,22 +20,25 @@
 - Comments, feedback, want to hack on something: @jcarp on Twitter or hi@jeff.is
 - Improvements, fixes: https://github.com/jeffcarp/angularjs-talk
 
-### Objective
+## Who are you
 
-- To give you a brief overview of AngularJS and the tools to learn more.
+- You have a basic understanding of JavaScript and front-end development
+- The objective of this talk is to give you a brief overview of AngularJS and the tools to learn more.
 
 ### Style
 
 - Most of this talk will take the following form:
-- 1. Code the end result that we want, see that it breaks
-- 2. Fill in the implementation and explain what's happening
-- 3. Lather, rinse, repeat
-- Audience participation
+  - 1. Code the end result that we want, see that it breaks
+  - 2. Fill in the implementation and explain what's happening
+
+### Audience participation
+
 - If you have a question, please ask it.
 - If you have something helpful to add, please do so.
 - Let's look at this talk as if it were a pair-pair-pair-pair-pair programming session
 
-- Let's get started
+### Let's get started
+
 - Did you hear a cat cafe is coming to SF?
 - We all know herding cats is kind of like... herding cats
 - Let's make a cat cafe management app
@@ -44,10 +48,10 @@
 
 - Mad Libs
 - I need:
-- A noun
-- An adjective
-- A percentage
-- A dollar amount
+  - A noun
+  - An adjective
+  - A percentage
+  - A dollar amount
 
 ```html
 <!doctype html>
