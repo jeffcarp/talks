@@ -31,6 +31,9 @@
   - 1. Code the end result that we want, see that it breaks
   - 2. Fill in the implementation and explain what's happening
 
+- The event advertised we would be going over testing - given the time limit we won't be able to
+- There are links to testing resources in the notes repo (jeffcarp/angularjs-talk)
+
 ### Audience participation
 
 - If you have a question, please ask it.
