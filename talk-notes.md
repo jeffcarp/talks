@@ -600,4 +600,5 @@ Orders.$add($scope.newOrder, function() {
 - We'll stop here
 - We only scratched the surface of what you can do with AngularJS
 - I've put up links to further reading and tutorials in the GitHub repo
+- Must shout out: Bloodhound is looking for an iOS engineer
 - Questions?
