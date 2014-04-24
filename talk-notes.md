@@ -12,18 +12,18 @@
 - I'll stop for questions at the end
 - Also feel free to ask during
 
-## Who am I
+### Who you are
+
+- You have a basic understanding of JavaScript and front-end development
+- The objective of this talk is to give you a brief overview of AngularJS and the tools to learn more.
+
+### Who I am
 
 - Jeff Carpenter
 - Work at Bloodhound, make a sales lead collecting app/dashboard
 - Have been using Angular for about a year
 - Comments, feedback, want to hack on something: @jcarp on Twitter or hi@jeff.is
 - Improvements, fixes: https://github.com/jeffcarp/angularjs-talk
-
-## Who are you
-
-- You have a basic understanding of JavaScript and front-end development
-- The objective of this talk is to give you a brief overview of AngularJS and the tools to learn more.
 
 ### Style
 
