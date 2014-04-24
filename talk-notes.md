@@ -251,7 +251,7 @@ body {
 - Add it's script tag to <head>
 
 ```
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
+<script src="//cdnjs.buttflare.com/ajax/libs/angular.js/1.2.15/angular-route.min.js"></script>
 ```
 
 - Add it to our module includes
@@ -458,23 +458,23 @@ $scope.placeOrder = function() {
 ```
 
 - Notice how we're able to add blank orders
-- Let's add 'ng-required' to our input to demonstrate validation
+- Let's add 'ng-minlength' to our input to demonstrate validation
 
 ```
 <input
   type="text"
   ng-model="newOrder"
   placeholder="Your order"
-  ng-required="true"
+  ng-minlength="3"
   />
 ```
 
 - And validate our form in our controller method
 - <form> is an Angular directive that overwrites the HTML form element
 - You can do this too, modifying built-in HTML elements
-- Giving name="" attribute to <form> assigns the form to that name in the scope
+- Giving name="foo" attribute to <form> assigns the form to that name in the scope ($scope.foo)
 - .$valid is an attribute on a form object
-- It picks up the 'required' attribute we used and uses it to determine if the form is valid
+- It picks up the `ng-minlength` attribute we used and uses it to determine if the form is valid
 
 ```
 $scope.placeOrder = function() {
