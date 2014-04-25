@@ -75,10 +75,25 @@
 </html>
 ```
 
-- Now we'll serve this easily (I've aliased python's simpleHTTPServer)
+- Now we'll serve this easily <s>(I've aliased python's simpleHTTPServer)</s>
+- Use this NodeJS server using express in `server.js`
 
 ```
-servedir
+var express = require('express');
+ 
+var app = express();
+ 
+app
+  .use(express.static('.'))
+  .get('*', function(req, res, next) {
+    res.sendfile('index.html');
+  });
+ 
+app.listen(5000);
+```
+
+```
+node server.js
 ```
 
 - Go to localhost:5000
