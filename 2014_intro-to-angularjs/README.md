@@ -9,6 +9,8 @@ HTML5 Live Code Meetup
 Startup House, 934 Howard St., San Francisco, CA
 ```
 
+Meetup link: http://www.meetup.com/html5livecode/events/173124562/
+
 ## Todo
 
 - Change CDN links to be consistent
