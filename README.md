@@ -10,4 +10,8 @@ I presented the paper _Design Principles Behind Smalltalk_ by Dan Ingalls at the
 
 ### [Building Hosted Fields](2015-building-hosted-fields)
 
+![api-design](images/building-hosted-fields.png)
+
+A technical walkthrough of the challenges my team faced building Hosted Fields at Braintree. Hosted Fields is a new payment integration that lets merchants acheive PCI compliance while allowing their payment form to blend into the rest of their website. We did this by replacing each input field with an iframe.
+
 ### [Introduction to AngularJS](2014-intro-to-angularjs)
