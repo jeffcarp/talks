@@ -2,6 +2,12 @@
 
 Notes and resources from talks I've given.
 
+### [Web Payments](https://speakerdeck.com/jeffcarp/web-payments)
+
+Native browser payment APIs are poised to improve frustrating mobile checkout experiences.
+
+![web payments](images/web-payments.png)
+
 ### [Design Principles Behind Smalltalk](2015-design-principles-behind-smalltalk)
 
 ![api design](images/api-design.png)
