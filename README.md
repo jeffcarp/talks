@@ -1,6 +1,6 @@
-# talks
+# talks + blog comments
 
-Notes and resources from talks I've given.
+Notes and resources from talks I've given. Also the issues for this repo serve as the comments for my [blog](https://www.jeffcarp.com).
 
 ### [Web Payments](https://speakerdeck.com/jeffcarp/web-payments)
 
