@@ -1,4 +1,4 @@
-# talks + blog comments
+# talks
 
 Notes and resources from talks I've given. Also the issues for this repo serve as the comments for my [blog](https://www.jeffcarp.com).
 
